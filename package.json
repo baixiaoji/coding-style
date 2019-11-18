@@ -3,13 +3,21 @@
   "version": "0.0.1",
   "description": "lint and format code",
   "scripts": {
-    "lint": "eslint src"
+    "lint": "eslint \"**/*.+(js|jsx|ts|tsx)\"",
+    "prettier": "prettier \"**/*.+(js|json|yml|yaml|css|scss|ts|tsx|md|mdx|graphql)\" ",
+    "format": "npm run prettier -- --write",
+    "validate": "npm run prettier -- --list-different"
   },
   "main": "index.js",
   "repository": "git@github.com:baixiaoji/coding-style.git",
   "author": "baixiaoji",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^6.6.0"
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.6.0",
+    "prettier": "1.19.1",
+    "typescript": "^3.7.2"
   }
 }
