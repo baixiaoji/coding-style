@@ -1,29 +1,15 @@
 {
-  "name": "use-eslint-and-prettier-demo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "coding",
+  "version": "0.0.1",
+  "description": "lint and format code",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint *.js",
-    "format": "prettier-eslint --use-tabs --write *.js",
-    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}"
+    "lint": "eslint src"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "eslint": "^4.14.0"
-  },
+  "main": "index.js",
+  "repository": "git@github.com:baixiaoji/coding-style.git",
+  "author": "baixiaoji",
+  "license": "MIT",
   "devDependencies": {
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.4.0",
-    "prettier": "^1.9.2",
-    "prettier-eslint-cli": "^4.7.0"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "semi": false,
-    "useTabs": true
+    "eslint": "^6.6.0"
   }
 }
